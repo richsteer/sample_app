@@ -29,6 +29,7 @@ gem 'jquery-rails', '2.0.2'
 
 group :test do
   gem 'capybara', '1.1.2'
+  gem 'factory_girl_rails', '4.1.0'
 #system dependent gems
 #  gem 'rb-fchange', '0.0.5'
 #  gem 'rb-notifu', '0.0.4'
