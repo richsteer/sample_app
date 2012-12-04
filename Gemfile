@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.8'
 gem 'bcrypt-ruby', '3.0.1'
 
+
 group :development, :test do
   gem 'annotate', '2.5.0'
   gem 'sqlite3', '1.3.5'
