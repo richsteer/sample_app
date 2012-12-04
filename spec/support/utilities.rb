@@ -5,4 +5,14 @@ def full_title(page_title)
 	else
 		"#{base_title} | #{page_title}"
 	end
+
+	def sign_in(user)
+		visit signin_path
+		fill_in "Email", with: user.Email
+		fill_in "Password", with: user.Password
+		click_button "Sign in"
+		# Sign in when no using Capybara as well
+		cookies[:remember_token] = user.remember_token
+	end
+
 end
